@@ -1,0 +1,62 @@
+.main-main{
+  background:#32383d;
+  height: 110vh;
+}
+.main{
+  margin-top: 100px;
+  display: flex;
+  margin: 50px;
+  height: 90vh;
+  overflow: hidden;
+  padding: 20px;
+  .container-main-div{
+    border-radius: 10px;
+    overflow:hidden;
+    margin-right: 5px;
+  }
+  .dish-items{
+    direction: rtl;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100vh;
+    box-shadow:  0px 0px 7px 2px rgba(51, 51, 51, 0.486);
+    padding: 5px;
+    border-radius: 10px;
+    >div{
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 5px;
+      background:#20272b !important;
+      &:nth-child(even){
+      background:#384247 !important;
+      }
+    }
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  overflow:hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7e7e7e;
+  border-radius: 10px;
+  overflow:hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #32383d;
+  border-radius: 10px;
+  overflow:hidden;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+  overflow:hidden;
+}

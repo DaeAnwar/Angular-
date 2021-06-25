@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.carousel.slide{
+  img{
+    width: 100% !important;
+    height: calc(100vh - 70px);
+  }
+}
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
