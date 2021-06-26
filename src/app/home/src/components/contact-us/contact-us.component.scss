@@ -4,7 +4,7 @@
   background:#fff;
   color:#eee;
   padding: 20px;
-  border-top: 5px solid red;
+  border-top: 2px solid red;
   .container{
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@
       font-size: 55px;
     }
     svg{
-      width: 150px;
+      width: 100px;
       fill: white;
       path{
         fill:red;
@@ -37,14 +37,18 @@
       min-width: 250px;
       border:none;
       padding: 7px;
+      font-size: 14px;
       border-radius: 5px;
       outline: none;
       border:1px solid #ccc;
+      &:focus{
+        border:1px solid rgba(255, 0, 0, 0.507);
+      }
     }
     textarea{
       height: 150px;
       margin: 20px;
-
+      width: 300px;
     }
     button{
       border:none;
