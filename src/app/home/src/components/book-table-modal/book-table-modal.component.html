@@ -1,0 +1,21 @@
+<div class="book-table-main" *ngIf="visible">
+  <img src="assets/map.jpg" class="img-map" />
+  <div class="form">
+    <h1>book a table</h1>
+    <h3>Event name</h3>
+    <div class="_col w-75">
+      <input placeholder="First name">
+      <input placeholder="Last name">
+    </div>
+    <div class="_col w-75">
+      <input type="date">
+      <!-- <input class="datetime"> -->
+      <input type="text" placeholder="Phone number"/>
+    </div>
+    <div class="_col">
+      <!-- <textarea placeholder="Message"></textarea> -->
+      <button>BOok</button>
+    </div>
+  </div>
+</div>
+<div class="black" *ngIf="visible" (click)="onCloseModal.emit()"></div>

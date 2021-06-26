@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+
+.main{
+  background:#fff;
+  color:#eee;
+  padding: 20px;
+  border-top: 5px solid red;
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    h1{
+      font-family: 'Kirang Haerang', cursive;
+      font-size: 55px;
+    }
+    svg{
+      width: 150px;
+      fill: white;
+      path{
+        fill:red;
+      }
+    }
+  }
+  .form{
+    display: flex;
+    height: 200px;
+    >div{
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      margin-top: 20px;
+      justify-content: space-between;
+
+    }
+    input, textarea{
+      min-width: 250px;
+      border:none;
+      padding: 7px;
+      border-radius: 5px;
+      outline: none;
+      border:1px solid #ccc;
+    }
+    textarea{
+      height: 150px;
+      margin: 20px;
+
+    }
+    button{
+      border:none;
+      border-radius: 5px;
+      font-weight: bold;
+      height: 45px;
+      background-color: red;
+        color:#fff;
+      &:hover{
+        color:#000;
+        background-color: transparent;
+        border:1px solid red;
+        color:red;
+      }
+    }
+  }
+}

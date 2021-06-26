@@ -1,14 +1,28 @@
 .main-main{
-  background:#32383d;
-  height: 110vh;
+  // background:#32383d;
+  // height: 110vh;
+  margin: 50px;
+
+  @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+h1, h3{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Kirang Haerang', cursive;
+    margin-block: 50px;
+  }
+  h3{
+    color:#555;
+    font-size: 17px;
+    margin-top: -17px;
+    margin-left:7px;
+  }
 }
 .main{
-  margin-top: 100px;
   display: flex;
-  margin: 50px;
-  height: 90vh;
+  margin-top: 20px;
+  height: 80vh;
   overflow: hidden;
-  padding: 20px;
+  padding: 0px;
   .container-main-div{
     border-radius: 10px;
     overflow:hidden;
@@ -19,16 +33,16 @@
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 100vh;
-    box-shadow:  0px 0px 7px 2px rgba(51, 51, 51, 0.486);
+    // box-shadow:  0px 0px 7px 2px rgba(51, 51, 51, 0.486);
     padding: 5px;
     border-radius: 10px;
     >div{
       border-radius: 10px;
       overflow: hidden;
       margin: 5px;
-      background:#20272b !important;
+      background:#eee !important;
       &:nth-child(even){
-      background:#384247 !important;
+      background:#ddd !important;
       }
     }
   }

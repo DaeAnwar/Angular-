@@ -6,6 +6,9 @@ import { CarrasolComponent } from '../shared/carrasol/carrasol.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderCardModule } from '../shared/header-card/header-card.module';
 import { MenuModule } from '../shared/menu/menu.module';
+import { EventsBlockComponent } from './src/components/events-block/events-block.component';
+import { BookTableModalComponent } from './src/components/book-table-modal/book-table-modal.component';
+import { ContactUsComponent } from './src/components/contact-us/contact-us.component';
 
 const routes : Routes = [
   {
@@ -17,7 +20,10 @@ const routes : Routes = [
 @NgModule({
   declarations: [
     HomeComponent,
-    CarrasolComponent
+    CarrasolComponent,
+    EventsBlockComponent,
+    BookTableModalComponent,
+    ContactUsComponent
   ],
   imports: [
     CommonModule,
