@@ -1,3 +1,20 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+h1, h3{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Kirang Haerang', cursive;
+    margin-block: 50px;
+  }
+  h3{
+    color:#555;
+    font-size: 17px;
+    margin-top: -17px;
+    margin-left:7px;
+  }
+  .main{
+    margin-bottom: 50px;
+  }
 .items{
   display: flex;
   // max-height: 150px;

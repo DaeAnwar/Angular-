@@ -24,4 +24,7 @@ import { HeaderCardModule } from './shared/header-card/header-card.module';
   providers: [],
   bootstrap: [AppComponent]
 })
+/**
+ * App module
+ */
 export class AppModule { }
