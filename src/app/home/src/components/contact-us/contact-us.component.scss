@@ -8,6 +8,9 @@
   .container{
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
   }
   .logo{
     h1{
@@ -25,13 +28,19 @@
   .form{
     display: flex;
     height: 200px;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+    }
     >div{
       display: flex;
       flex-direction: column;
       height: 150px;
       margin-top: 20px;
       justify-content: space-between;
-
+      @media only screen and (max-width: 600px) {
+        height: auto;
+        margin:auto;
+      }
     }
     input, textarea{
       min-width: 250px;
@@ -41,6 +50,10 @@
       border-radius: 5px;
       outline: none;
       border:1px solid #ccc;
+      @media only screen and (max-width: 600px) {
+        max-width: 300px;
+        margin-bottom: 10px !important;
+      }
       &:focus{
         border:1px solid rgba(255, 0, 0, 0.507);
       }
@@ -49,6 +62,11 @@
       height: 150px;
       margin: 20px;
       width: 300px;
+      @media only screen and (max-width: 600px) {
+        height: 300px;
+        width: auto;
+        margin:auto;
+      }
     }
     button{
       border:none;

@@ -11,7 +11,7 @@ import { HeaderCardModule } from './shared/header-card/header-card.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
+    // NavBarComponent,
     // CarrasolComponent
   ],
   imports: [
