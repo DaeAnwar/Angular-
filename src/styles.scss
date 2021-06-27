@@ -4,6 +4,11 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+.error{
+  font-size: 13px;
+  color:red;
+}
+
 .carousel.slide{
   img{
     width: 100% !important;

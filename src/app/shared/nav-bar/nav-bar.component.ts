@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,10 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.userExist =  localStorage.getItem("user-info") != null;
+
+  }
+
+  get isUserExist(){
+    if(localStorage.getItem("user-info"))
+      return true;
+    return false;
+    // return JSON.parse(localStorage.getItem("user-info");
   }
 
   displayMobileItems = false;
+
+  userExist = false;
+
+
+  logout(){
+    this.displayMobileItems = false;
+    this.userExist = false;
+    localStorage.removeItem("user-info");
+    this.router.navigateByUrl("/");
+    // this.router.navigateByUrl("");
+  }
 }

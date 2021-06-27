@@ -12,11 +12,20 @@ import { ContactUsComponent } from './src/components/contact-us/contact-us.compo
 import { GalleryComponent } from './src/components/gallery/gallery.component';
 import { NavBarComponent } from '../shared/nav-bar/nav-bar.component';
 import { MenuMobileModule } from '../shared/menu-mobile/menu-mobile.module';
+import { GuardInGuard } from '../guards/guard-in.guard';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes : Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    children: [
+      {
+        path: 'book/:eventid',
+        component: BookTableModalComponent,
+        canActivate: [GuardInGuard]
+      }
+    ]
   }
 ]
 
@@ -36,7 +45,8 @@ const routes : Routes = [
     RouterModule.forChild(routes),
     MenuModule,
     HeaderCardModule,
-    MenuMobileModule
+    MenuMobileModule,
+    ReactiveFormsModule
     // HeaderCardModule
   ]
 })

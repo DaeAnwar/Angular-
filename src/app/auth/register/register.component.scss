@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.main{
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/wallpaper.jpg");
+  background-size: cover;
+  // padding-bottom: 20px;
+  .form{
+    width: 422px;
+    border:1px solid #eee;
+    box-shadow:4px 6px 13px 1px #00000078;
+    // padding-inline: 10px;
+    background:#fff;
+    border-radius: 5px;
+    @media only screen and (max-width: 600px) {
+      // position: fixed;
+      overflow-y: auto;
+      padding-block:50px;
+      // height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      // width: 100vw;
+      // height: 100vh;
+    }
+    h1{
+      height: 65px;
+      text-align: center;
+      border-bottom: 1px solid #cbdaed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    label{
+      color:#3e3e3e;
+      font-size: 16px;
+      line-height: 1;
+    }
+    input{
+      width: 382px;
+      @media only screen and (max-width: 600px) {
+        width: 300px;
+      }
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid #cbdaed;
+      outline: none;
+      padding-inline: 10px;
+    }
+    button{
+      background:#356fb8;
+      border-radius: 24px;
+      color:#fff;
+      font-weight: bold;
+      font-size: 20px;
+      border:none;
+      width: 382px;
+      height: 47px;
+      margin-bottom: 20px;
+      margin-inline: 20px;
+      @media only screen and (max-width: 600px) {
+        width: 300px;
+      }
+    }
+    ._group{
+      padding-inline: 20px;
+      margin-block: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .pwd-forget{
+    font-size: 15px;
+    text-decoration: underline;
+  }
+}
+
+.btn-signup{
+  background:#356fb8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#fff;
+  width: 120px;
+  height: 40px;
+  padding-inline: 20px;
+  border-radius: 5px;
+  border:none;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  z-index: 1000;
+  right: 20px;
+  font-family: 'Roboto', sans-serif;
+  top: 20px;
+  svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+  }
+}
