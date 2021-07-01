@@ -15,6 +15,7 @@ import { MenuMobileModule } from '../shared/menu-mobile/menu-mobile.module';
 import { GuardInGuard } from '../guards/guard-in.guard';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TableModule } from '../shared/table/table.module';
+import { NavBarModule } from '../shared/nav-bar/nav-bar.module';
 
 const routes : Routes = [
   {
@@ -38,7 +39,7 @@ const routes : Routes = [
     BookTableModalComponent,
     ContactUsComponent,
     GalleryComponent,
-    NavBarComponent
+
   ],
   imports: [
     CommonModule,
@@ -49,7 +50,8 @@ const routes : Routes = [
     MenuMobileModule,
     ReactiveFormsModule,
     // HeaderCardModule
-    TableModule
+    TableModule,
+    NavBarModule
   ]
 })
 export class HomeModule { }

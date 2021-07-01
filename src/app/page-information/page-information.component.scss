@@ -1,65 +1,144 @@
+// .main{
+//   color:#333;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   .header{
+//     height: 70px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     padding-inline: 20px;
+//     >img{
+//       width: 120px;
+//       height: 50px;
+//     }
+//   }
+//   .container{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     .description{
+//       >p{
+//         font-size: 17px;
+//         max-width: 400px;
+//       }
+//     }
+//     .location{
+//       display: flex;
+//       margin-top: 30px;
+//       >img{
+//         width: 400px;
+//         height: 300px;
+//         margin-right: 40px;
+//       }
+//       .open-hours{
+//         display: flex;
+//       }
+//       .phonenumber{
+//         font-weight: bold;
+//         letter-spacing: 1px;
+//       }
+//       .email{
+//         color:blue;
+//         font-weight: bold;
+//       }
+//     }
+//   }
+// }
+
+// .info{
+//   flex-direction: row-reverse;
+//   label{
+//     font-weight: bold;
+//     font-size: 12px;
+//   }
+//   p{
+//     font-size: 20px;
+//   }
+// }
+
+
+// .open-hours{
+//   display: block !important;
+// }
+
 .main{
-  color:#333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  .header{
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-inline: 20px;
-    >img{
-      width: 120px;
-      height: 50px;
-    }
-  }
+  background-color: #222;
   .container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .description{
-      >p{
-        font-size: 17px;
-        max-width: 400px;
+    align-items: flex-start;
+    min-height: calc(100vh);
+    >div{
+      width: 100%;
+      text-align: center;
+      margin-top: 100px;
+      h1{
+        margin-bottom: 30px;
+        color:#eee;
       }
     }
-    .location{
-      display: flex;
-      margin-top: 30px;
-      >img{
+  }
+  .form{
+    ._group{
+      min-height: 70px;
+      input, textarea{
         width: 400px;
-        height: 300px;
-        margin-right: 40px;
+        padding: 20px;
+        height: 40px;
+        background:#333;
+        border:none;
+        border-radius: 5px;
+        text-align: center;
+        color:#fff;
       }
-      .open-hours{
-        display: flex;
+      textarea{
+        height: 150px;
       }
-      .phonenumber{
+      button{
+        background:red;
+        color:#fff;
+        border:none;
+        border-radius: 5px;
+        width: 170px;
+        height: 50px;
+
+      }
+    }
+  }
+  .contact-info{
+    color:#fff;
+    .f{
+      display: flex;
+      img{
+        width: 250px;
+        height: 250px;
+        border-radius: 5px;
+      }
+      >div{
+        text-align: left;
+        margin-left: 75px;
+      }
+    }
+    .info{
+      display: flex;
+      justify-content: space-between;
+      .phonenumber, .email{
+        text-align: left;
+        margin-top: 60px;
         font-weight: bold;
         letter-spacing: 1px;
+        font-size: 17px;
+        >label{
+          color:#ccc;
+          font-size: 13px;
+          font-weight: normal;
+        }
       }
       .email{
-        color:blue;
-        font-weight: bold;
+        text-align: right;
       }
     }
   }
-}
-
-.info{
-  flex-direction: row-reverse;
-  label{
-    font-weight: bold;
-    font-size: 12px;
-  }
-  p{
-    font-size: 20px;
-  }
-}
-
-
-.open-hours{
-  display: block !important;
 }

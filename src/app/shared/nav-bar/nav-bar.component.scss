@@ -4,7 +4,13 @@ nav{
   background-size: cover;
   background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 78%, 85% 91%, 62% 100%, 39% 100%, 16% 90%, 0 78%);
-
+  &.not-home-page{
+    height: 70px;
+    // background:none;
+    // background:#333;
+    position: fixed;
+    width: 100%;
+  }
   >.container{
     height: 70px;
     display: flex;

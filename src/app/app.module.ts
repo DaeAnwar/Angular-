@@ -8,6 +8,7 @@ import { NgbCarousel, NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-boot
 import { CarrasolComponent } from './shared/carrasol/carrasol.component';
 import { HeaderCardModule } from './shared/header-card/header-card.module';
 import { PageInformationComponent } from './page-information/page-information.component';
+import { NavBarModule } from './shared/nav-bar/nav-bar.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PageInformationComponent } from './page-information/page-information.co
     AppRoutingModule,
     NgbModule,
     // NgbCarouselModule
-    HeaderCardModule
+    HeaderCardModule,
+    NavBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
