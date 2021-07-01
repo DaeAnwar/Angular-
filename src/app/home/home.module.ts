@@ -14,6 +14,7 @@ import { NavBarComponent } from '../shared/nav-bar/nav-bar.component';
 import { MenuMobileModule } from '../shared/menu-mobile/menu-mobile.module';
 import { GuardInGuard } from '../guards/guard-in.guard';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TableModule } from '../shared/table/table.module';
 
 const routes : Routes = [
   {
@@ -46,8 +47,9 @@ const routes : Routes = [
     MenuModule,
     HeaderCardModule,
     MenuMobileModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
     // HeaderCardModule
+    TableModule
   ]
 })
 export class HomeModule { }

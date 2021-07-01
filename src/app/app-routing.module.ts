@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GuardOutGuard } from './guards/guard-out.guard';
+import { PageInformationComponent } from './page-information/page-information.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,9 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: ()=> import("./home/home.module").then( m => m.HomeModule)
+  },{
+    path: 'info',
+    component: PageInformationComponent
   },{
     path: '',
     pathMatch: 'full',
