@@ -32,16 +32,27 @@
           <p>Route Touristique El Kantaoui</p>
           <p>en Face du Kiosque AGIL 4000</p>
           <p><strong>Sousse, Tunisie</strong></p>
+
+        </div>
+      </div>
+      <div class="opening">
+        <div>
+          <h3>OPEN AT</h3>
+          <p *ngIf="information?.length">{{information[0].openAt | date:"HH:mm"}}</p>
+        </div>
+        <div>
+          <h3>CLOSE AT</h3>
+          <p *ngIf="information?.length">{{information[0].closeAt | date:"HH:mm"}}</p>
         </div>
       </div>
       <div class="info">
         <div class="phonenumber">
           <label>phonenumber</label>
-          <p>+21694525422</p>
+          <p *ngIf="information?.length">+216{{information[0].phoneNumber}}</p>
         </div>
         <div class="email">
           <label>Email</label>
-          <p>thespacerestolounge@gmail.com</p>
+          <p *ngIf="information?.length">{{information[0].email}}</p>
         </div>
       </div>
 

@@ -1,20 +1,18 @@
-<app-book-table-modal [visible]="visibleModal" (on-close)="onCloseModel()"></app-book-table-modal>
+<!-- <app-book-table-modal  (on-close)="onCloseModel()"></app-book-table-modal> -->
 
 <div class="container">
   <h1>Our week events</h1>
   <div class="event-items">
-    <div class="event-item" *ngFor="let item of [1,2,3,4]">
+    <div class="event-item" *ngFor="let event of events">
       <div class="img-container">
-        <img src="assets/img2.jpg" class="img-event"/>
+        <img [src]="baseurl+'/images/'+event.image" class="img-event"/>
         <div class="black"></div>
-        <button (click)="showBookTable()">reserver</button>
+        <button (click)="showBookTable(event.id)">reserver</button>
       </div>
       <div class="event-detail">
-        <h3>Event name</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, provident nihil. Praesentium sunt delectus voluptates cupiditate modi eligendi! Accusamus rerum consequuntur porro autem voluptate perferendis aspernatur consectetur culpa reprehenderit debitis?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci rem nemo ea quaerat ipsa consectetur dicta sed, quia magni libero error non voluptates odio qui aliquid, dolorum optio facere.</p>
-        <div class="date-event">06/07/2021</div>
+        <h3>{{event.name}}</h3>
+        <p [outerHTML]="event.description"></p>
+        <div class="date-event">{{event.starAt | date}}</div>
       </div>
     </div>
   </div>

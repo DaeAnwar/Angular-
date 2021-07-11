@@ -52,3 +52,11 @@
     }
   }
 }
+.disabled{
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+.reserved{
+  filter:hue-rotate(90deg) !important;
+}

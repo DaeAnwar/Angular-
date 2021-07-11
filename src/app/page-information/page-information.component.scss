@@ -68,7 +68,7 @@
   background-color: #222;
   .container{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     min-height: calc(100vh);
     >div{
       width: 100%;
@@ -141,4 +141,12 @@
       }
     }
   }
+}
+
+.opening{
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

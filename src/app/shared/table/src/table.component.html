@@ -1,24 +1,52 @@
 <div class="table">
 <img src="assets/table/table.jpeg" />
 <div class="table-place table-1">
-  <img src="assets/table/table_1.png" class="table-place-img">
+  <img src="assets/table/table_1.png" class="table-place-img"
+  [ngClass]="{'disabled': reservedTables.includes('/api/tables/1'),
+  'reserved':currentReservedTable.includes('/api/tables/1') }"
+  (click)="toggleReservationTable.emit('/api/tables/1')"
+  >
 </div>
 <div class="table-place table-2">
-  <img src="assets/table/table_2.png" class="table-place-img">
+  <img src="assets/table/table_2.png" class="table-place-img"
+  [ngClass]="{'disabled': reservedTables.includes('/api/tables/2'),
+  'reserved':currentReservedTable.includes('/api/tables/2') }"
+  (click)="toggleReservationTable.emit('/api/tables/2')"
+  >
 </div>
 <div class="table-place table-3">
-  <img src="assets/table/table_3.png" class="table-place-img">
+  <img src="assets/table/table_3.png" class="table-place-img"
+  (click)="toggleReservationTable.emit('/api/tables/3')"
+  [ngClass]="{'disabled': reservedTables.includes('/api/tables/3'),
+  'reserved':currentReservedTable.includes('/api/tables/3') }"
+  >
 </div>
 <div class="table-place table-4">
-  <img src="assets/table/table_1.png" class="table-place-img">
+  <img src="assets/table/table_1.png" class="table-place-img"
+  [ngClass]="{'disabled': reservedTables.includes('/api/tables/4'),
+  'reserved':currentReservedTable.includes('/api/tables/4') }"
+  (click)="toggleReservationTable.emit('/api/tables/4')"
+  >
 </div>
 <div class="table-place table-5">
-  <img src="assets/table/table_1.png" class="table-place-img">
+  <img src="assets/table/table_1.png" class="table-place-img"
+  [ngClass]="{'disabled': reservedTables.includes('/api/tables/5'),
+  'reserved':currentReservedTable.includes('/api/tables/5') }"
+  (click)="toggleReservationTable.emit('/api/tables/5')"
+  >
 </div>
 <div class="table-place table-6">
-  <img src="assets/table/table_1.png" class="table-place-img">
+  <img src="assets/table/table_1.png" class="table-place-img"
+  [ngClass]="{'disabled': reservedTables.includes('/api/tables/6'),
+  'reserved':currentReservedTable.includes('/api/tables/6') }"
+  (click)="toggleReservationTable.emit('/api/tables/6')"
+  >
 </div>
 <div class="table-place table-7">
-  <img src="assets/table/table_1.png" class="table-place-img">
+  <img src="assets/table/table_1.png" class="table-place-img"
+  [ngClass]="{'disabled': reservedTables.includes('/api/tables/7'),
+  'reserved':currentReservedTable.includes('/api/tables/7') }"
+  (click)="toggleReservationTable.emit('/api/tables/7')"
+  >
 </div>
 </div>

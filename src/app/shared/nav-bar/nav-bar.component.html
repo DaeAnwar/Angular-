@@ -7,11 +7,11 @@
       <img src="assets/icons/menu.png" class="icon menu" (click)="displayMobileItems = true"/>
       <ul>
         <li class="active">Home</li>
-        <li>Reservation</li>
-        <li>Menu</li>
-        <li>Events</li>
-        <li>Gallery</li>
-        <li>
+        <li (click)="isHomePage ? onNavReservation.emit() : redirectToHome('reservation')">Reservation</li>
+        <li (click)="isHomePage ? onNavMenu.emit() : redirectToHome('menu')">Menu</li>
+        <li (click)="isHomePage ? onNavReservation.emit() : redirectToHome('reservation')">Events</li>
+        <li (click)="isHomePage ? onNavGallery.emit() : redirectToHome('gallery')">Gallery</li>
+        <li (click)="redirectToContactUs()">
           Contact-us
         </li>
         <li *ngIf="isUserExist" (click)="logout()">logout</li>
@@ -24,7 +24,7 @@
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit.?
     </p>
-    <button class="btn">Reserver</button>
+    <button class="btn" (click)="onNavReservation.emit()">Reserver</button>
   </div>
 
 

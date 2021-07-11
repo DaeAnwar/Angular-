@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoService } from '../services/info.service';
 
 @Component({
   selector: 'app-page-information',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageInformationComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private infoSrv: InfoService
+  ) { }
 
   ngOnInit(): void {
+    this.loadInformation();
   }
 
+  information: any;
+  loadInformation(){
+    this.infoSrv.getInformation().subscribe( res => {
+      this.information = res;
+      console.log(this.information)
+    }, err => {
+      console.error(err);
+    })
+  }
 }

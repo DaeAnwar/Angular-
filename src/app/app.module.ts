@@ -9,6 +9,7 @@ import { CarrasolComponent } from './shared/carrasol/carrasol.component';
 import { HeaderCardModule } from './shared/header-card/header-card.module';
 import { PageInformationComponent } from './page-information/page-information.component';
 import { NavBarModule } from './shared/nav-bar/nav-bar.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NavBarModule } from './shared/nav-bar/nav-bar.module';
     NgbModule,
     // NgbCarouselModule
     HeaderCardModule,
-    NavBarModule
+    NavBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
