@@ -1,7 +1,7 @@
 <nav [ngClass]="{'not-home-page': !isHomePage}">
   <div class="container">
     <div>
-      <img src="assets/logo.png" class="logo" />
+      <img src="assets/logo.jpg" class="logo" />
     </div>
     <div>
       <img src="assets/icons/menu.png" class="icon menu" (click)="displayMobileItems = true"/>
@@ -20,11 +20,10 @@
     </div>
   </div>
   <div class="msg-hello" *ngIf="isHomePage">
-    <h1>Welcome To Your Webisete</h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit.?
+    <h1>Welcome To The Space</h1>
+    <p>We Provide Good Food and  hyper events For you !
     </p>
-    <button class="btn" (click)="onNavReservation.emit()">Reserver</button>
+    <button class="btn" (click)="onNavReservation.emit()">Reserve </button>
   </div>
 
 
